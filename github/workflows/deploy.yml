@@ -1,4 +1,4 @@
-name: Deploy Flow State (flow_state) to GitHub Pages
+github/workflows/deploy.yml
 
 on:
   push:
