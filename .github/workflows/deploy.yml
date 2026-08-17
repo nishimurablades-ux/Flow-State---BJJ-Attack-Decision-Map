@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@24cb9080177205b6e8c946b17baddf0c4fed38c5
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@1a4442caab129478691007163874007077176f93
         with:
           node-version: '18'
 
@@ -26,7 +26,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages (gh-pages branch)
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@373f7f263a6e0af716ebf479e8ad3d0c34d10dfd
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
